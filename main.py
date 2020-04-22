@@ -1,6 +1,8 @@
 import random
 import math
 
+random.seed(42)
+
 # Extended Euclidean algorithm
 def egcd(a, b):
 	if a == 0:
@@ -96,7 +98,7 @@ public_key, private_key = generate_keys(17)
 
 print("Public key: " , public_key)
 print("Private key: ", private_key)
-text = "Hello father. How is life."
+text = "This is a sample text"
 encrypted_text = encrypt(public_key, text)
 print(encrypted_text)
 decypehered_text = decypher(private_key, encrypted_text)
